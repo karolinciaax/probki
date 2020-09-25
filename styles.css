@@ -27,10 +27,12 @@ header > h1 {
 }
 
 .hr {
-    width: 100%;
-    height: 0.1rem;
-    opacity: 0.4;
-    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 0.3rem;
+    opacity: 0.6;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
 }
 
 .sm-link > img {
@@ -49,6 +51,10 @@ header > h1 {
     margin-bottom: 5rem;
 }
 
+#heroSection > .row {
+    flex-direction: row;
+}
+
 #heroSection  > #imgHero > img {
     width: auto;
     height: 30rem;
@@ -57,24 +63,81 @@ header > h1 {
 
 #imgHero {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     /* flex-direction: row-reverse; */
 }
 
-.blackBorder {
-    border: black 3px solid;
-    z-index: -900;
-    width: 65%;
-    height: 65%;
-    position: absolute;
-    left: 15%;
-    top: 30%;
+.registerBtn {
+    background-color: crimson;
+    color: white;
+    font-size: 14px;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    border: solid 2px rgb(238, 16, 16);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
+.registerBtn:hover {
+    color: rgba(255, 255, 255, 0.527);
+    background-color: rgb(105, 25, 41);
+    transform: color;
+}
 
+#vipInfoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+}
+
+#vipBuy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    margin: 10rem 0;
+}
+
+#vipBuy > p {
+    font-size: 18px;
+    margin-top: 1.2rem;
+}
+
+.vipInfoItem {
+    font-size: 24px;
+    margin: 0.9rem 0;
+}
+
+footer {
+    width: 100%;
+    font-size: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(196, 196, 196);
+    margin-top: 3rem;
+}
+    
 
 @media (max-width: 768px) {
     header > h1 {
         font-size: 18px;
+    }
+    .sm-link > img {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 0.7rem;
     }
     #imgHero {
         display: flex;
@@ -84,9 +147,11 @@ header > h1 {
     .blackBorder {
         display: none;
     }
-
+    .title {
+        font-size: 12px;
+    }
     #heroSection  > #imgHero > img {
-        width: 30rem;
+        width: auto;
         height: 30rem;
         margin: 0rem;
     }
