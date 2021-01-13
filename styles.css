@@ -83,6 +83,17 @@ header > h1 {
     transition: all 0.3s ease-in-out;
 }
 
+#registerBtn2 {
+    background-color: rgb(20, 123, 220);
+    border: solid 2px rgb(16, 75, 238);
+}
+
+#registerBtn3 {
+    background-color: rgb(20, 220, 97);
+    border: solid 2px rgb(39, 143, 61);
+
+}
+
 .registerBtn:hover {
     color: rgba(255, 255, 255, 0.527);
     background-color: rgb(105, 25, 41);
@@ -115,7 +126,7 @@ header > h1 {
 
 .vipInfoItem {
     font-size: 24px;
-    margin: 0.9rem 0;
+    margin: 0.4rem 0;
 }
 
 footer {
@@ -128,6 +139,8 @@ footer {
     background-color: rgb(196, 196, 196);
     margin-top: 3rem;
 }
+
+#kontakt { font-size: 2rem; display: flex; justify-content: center; align-items: center;}
     
 
 @media (max-width: 768px) {
